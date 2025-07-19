@@ -133,3 +133,18 @@ function renderCart() {
   if (totalQty) totalQty.textContent = totalQ;
   if (totalPrice) totalPrice.textContent = totalP;
 }
+
+
+const number = [10, 9, 22, 1, 67, 8, 9, 10, 0, 9]
+
+const count = {};
+
+for(let i = 0; i < number.length; i++){
+  let num = numbers[i];
+  if(count[num]){
+    count[num]++;
+  }else{
+    count[num] = 1;
+  }
+}
+console.log(count)
