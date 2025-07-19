@@ -148,3 +148,17 @@ for(let i = 0; i < number.length; i++){
   }
 }
 console.log(count)
+
+const numbers = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
+const counts = {}
+
+for (let i = 0; i < number.length; i++){
+  let num = number[i];
+  if (count[num]){
+    count[num]++;
+  }else{
+    count[num] = 1;
+  }
+}
+
+console.log(count)
