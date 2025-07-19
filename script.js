@@ -135,9 +135,9 @@ function renderCart() {
 }
 
 
-const number = [10, 9, 22, 1, 67, 8, 9, 10, 0, 9]
+const numb = [10, 9, 22, 1, 67, 8, 9, 10, 0, 9]
 
-const count = {};
+const cou = {};
 
 for(let i = 0; i < number.length; i++){
   let num = numbers[i];
@@ -149,8 +149,8 @@ for(let i = 0; i < number.length; i++){
 }
 console.log(count)
 
-const numbers = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
-const counts = {}
+const numbe = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
+const coun = {}
 
 for (let i = 0; i < number.length; i++){
   let num = number[i];
@@ -162,3 +162,5 @@ for (let i = 0; i < number.length; i++){
 }
 
 console.log(count)
+
+const number = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
