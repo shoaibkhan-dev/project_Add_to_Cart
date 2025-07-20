@@ -5,6 +5,7 @@ const products = [
   { id: 4, name: "Dragon HeadPhone", price: 45000, image: "https://learning-axis.com/wp-content/uploads/2025/05/aa-1.webp" },
 ];
 
+
 const productList = document.getElementById("product-list");
 const cartCount = document.getElementById("cart-count");
 const cartIcon = document.getElementById("cart-icon");
@@ -12,7 +13,7 @@ const cartItems = document.getElementById("cart-items");
 const totalQty = document.getElementById("total-qty");
 const totalPrice = document.getElementById("total-price");
 
-function getCart() {
+function getCart() { 
   return JSON.parse(localStorage.getItem("cart")) || [];
 }
 
@@ -134,33 +135,3 @@ function renderCart() {
   if (totalPrice) totalPrice.textContent = totalP;
 }
 
-
-const numb = [10, 9, 22, 1, 67, 8, 9, 10, 0, 9]
-
-const cou = {};
-
-for(let i = 0; i < number.length; i++){
-  let num = numbers[i];
-  if(count[num]){
-    count[num]++;
-  }else{
-    count[num] = 1;
-  }
-}
-console.log(count)
-
-const numbe = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
-const coun = {}
-
-for (let i = 0; i < number.length; i++){
-  let num = number[i];
-  if (count[num]){
-    count[num]++;
-  }else{
-    count[num] = 1;
-  }
-}
-
-console.log(count)
-
-const number = [1,3,4,2,5,3,3,4,2,2,2,1,6,8];
