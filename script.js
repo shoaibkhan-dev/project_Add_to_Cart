@@ -13,7 +13,7 @@ const cartItems = document.getElementById("cart-items");
 const totalQty = document.getElementById("total-qty");
 const totalPrice = document.getElementById("total-price");
 
-function getCart() { 
+function getCart() {
   return JSON.parse(localStorage.getItem("cart")) || [];
 }
 
