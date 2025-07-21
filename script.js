@@ -135,3 +135,28 @@ function renderCart() {
   if (totalPrice) totalPrice.textContent = totalP;
 }
 
+
+
+
+
+const Products = [
+  {id: 1, name: "samsung Z flip", price: 21000, image: "https//www.image.com" },
+  {id: 2, name: "dslr camera", price: 150000, image: "https//www.image.com"},
+  {id: 3, name: "airpods pro", price: 40000, image: "https///www.image.com"},
+  {id: 4, name: "dragon headphones", price: 80000, image: "https//www.image.com"}
+];
+
+const productsList = document.getElementById("productsList");
+const cartsCount = document.getElementById("cartsCount");
+const cartsIcon = document.getElementById("cartsicon");
+const cartsItem = document.getElementById("cartsItem");
+const totalQuantity = document.getElementById("totalQuantity");
+const totalProces = document.getElementById("totalPrices");
+
+function getCart(){
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart))
+}
