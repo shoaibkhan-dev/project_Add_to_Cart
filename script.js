@@ -158,5 +158,13 @@ function getCart(){
 }
 
 function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart))
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function getCart(){
+  return JSON.parse(localStorage.getItem("cart")) || []
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
