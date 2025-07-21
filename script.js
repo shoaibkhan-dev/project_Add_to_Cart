@@ -162,7 +162,11 @@ function setCart(cart){
 }
 
 function getCart(){
-  return JSON.parse(localStorage.getItem("cart")) || []
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function setCart(cart){
