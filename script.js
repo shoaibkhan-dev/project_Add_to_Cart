@@ -172,3 +172,18 @@ function setCart(cart){
 function setCart(cart){
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
+const Product = [
+  { id: 1, name: "mobile", price: 20000, image: "https//www.image.com",
+    id: 2, name: "camera", price: 40000, image: "https//www.image.com",
+    id: 3, name: "buds", price: 10000, image: "https//www.image.com",
+    id: 4, name: "head phones", price: 30000, image: "https//www.image.com"
+}]
+
+const productItem = document.getElementById("productItem");
+const listItem = document.getElementById("listItem");
+const productssList = document.getElementById("productsslist");
+const listItems = document.getElementById("listItems");
+
+
