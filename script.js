@@ -186,4 +186,11 @@ const listItem = document.getElementById("listItem");
 const productssList = document.getElementById("productsslist");
 const listItems = document.getElementById("listItems");
 
+function getCart(){
+  return JSON.parse(localStorage.getItem("cart"));
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
