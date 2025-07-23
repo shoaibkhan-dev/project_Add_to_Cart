@@ -215,4 +215,5 @@ function updateCartCount(){
 function updateCartCount(){
   const cart = getCart();
   const count = cart.reduce((sun, item) => sum + item.qty, 0);
+  if(cartCount) cartCount.textContent = count;
 }
