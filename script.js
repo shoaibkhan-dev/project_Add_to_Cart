@@ -217,3 +217,35 @@ function updateCartCount(){
   const count = cart.reduce((sun, item) => sum + item.qty, 0);
   if(cartCount) cartCount.textContent = count;
 }
+
+function updateCartCount(){
+  const cart = getCart();
+  const count = cart.reduce((sun, item) => sum + item.qty, 0);
+  if(cartCount) cartCount.textContent = count;
+}
+
+function getCart(){
+  return JSON.parse(localStorage.getItem("cart"))
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart))
+}
+
+function updateCartCount(){
+  const cart = (getCart());
+  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  if(cartCount) cartCount.textContent = count;
+}
+
+function updateCartCount(){
+  const cart = getCart();
+  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  if(cartCount) cartCount.textContent = count;
+}
+
+const Produc = [
+  {id: 1, name: "samsung", price: 2000, image: "dhsfjkshfdkajshfklas"}
+]
+
+const product = document.getElementById("product")
