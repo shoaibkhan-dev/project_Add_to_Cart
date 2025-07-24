@@ -248,4 +248,12 @@ const Produc = [
   {id: 1, name: "samsung", price: 2000, image: "dhsfjkshfdkajshfklas"}
 ]
 
-const product = document.getElementById("product")
+const product = document.getElementById("product");
+
+function getCart(){
+  return JSON.parse(localStorage.getItem("cart"))
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
