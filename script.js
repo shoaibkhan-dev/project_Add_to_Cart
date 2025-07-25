@@ -14,7 +14,7 @@ const totalQty = document.getElementById("total-qty");
 const totalPrice = document.getElementById("total-price");
 
 function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || []; 
+  return JSON.parse(localStorage.getItem("cart")) || [];
 }
 
 function setCart(cart) {
@@ -27,12 +27,10 @@ function updateCartCount() {
   if (cartCount) cartCount.textContent = count;
 }
 
-function getCart(){
-   return JSON.parse(localStorage.getItem("cart"))
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart))
+function updateCartCount(){
+  const cart = getCart();
+  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  if(cartCount) cartCount.textContent = count;
 }
 
 function renderProducts() {
