@@ -14,7 +14,7 @@ const totalQty = document.getElementById("total-qty");
 const totalPrice = document.getElementById("total-price");
 
 function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || [];
+  return JSON.parse(localStorage.getItem("cart")) || []; 
 }
 
 function setCart(cart) {
@@ -25,6 +25,14 @@ function updateCartCount() {
   const cart = getCart();
   const count = cart.reduce((sum, item) => sum + item.qty, 0);
   if (cartCount) cartCount.textContent = count;
+}
+
+function getCart(){
+   return JSON.parse(localStorage.getItem("cart"))
+}
+
+function setCart(cart){
+  localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 function renderProducts() {
@@ -135,131 +143,3 @@ function renderCart() {
   if (totalPrice) totalPrice.textContent = totalP;
 }
 
-
-
-
-
-const Products = [
-  {id: 1, name: "samsung Z flip", price: 21000, image: "https//www.image.com" },
-  {id: 2, name: "dslr camera", price: 150000, image: "https//www.image.com"},
-  {id: 3, name: "airpods pro", price: 40000, image: "https///www.image.com"},
-  {id: 4, name: "dragon headphones", price: 80000, image: "https//www.image.com"}
-];
-
-const productsList = document.getElementById("productsList");
-const cartsCount = document.getElementById("cartsCount");
-const cartsIcon = document.getElementById("cartsicon");
-const cartsItem = document.getElementById("cartsItem");
-const totalQuantity = document.getElementById("totalQuantity");
-const totalProces = document.getElementById("totalPrices");
-
-function getCart(){
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function getCart(){
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-
-const Product = [
-  { id: 1, name: "mobile", price: 20000, image: "https//www.image.com",
-    id: 2, name: "camera", price: 40000, image: "https//www.image.com",
-    id: 3, name: "buds", price: 10000, image: "https//www.image.com",
-    id: 4, name: "head phones", price: 30000, image: "https//www.image.com"
-}]
-
-const productItem = document.getElementById("productItem");
-const listItem = document.getElementById("listItem");
-const productssList = document.getElementById("productsslist");
-const listItems = document.getElementById("listItems");
-
-function getCart(){
-  return JSON.parse(localStorage.getItem("cart"));
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function updateCartCount() {
-  const cart = getCart();
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  if (cartCount) cartCount.textContent = count;
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  if (cartCount) cartCount.textContent = count;
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sum, item) => sum + item.qty. o);
-  if(cartCount) cartCount.textContent = count; 
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sun, item) => sum + item.qty, 0);
-  if(cartCount) cartCount.textContent = count;
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sun, item) => sum + item.qty, 0);
-  if(cartCount) cartCount.textContent = count;
-}
-
-function getCart(){
-  return JSON.parse(localStorage.getItem("cart"))
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart))
-}
-
-function updateCartCount(){
-  const cart = (getCart());
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  if(cartCount) cartCount.textContent = count;
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  if(cartCount) cartCount.textContent = count;
-}
-
-const Produc = [
-  {id: 1, name: "samsung", price: 2000, image: "dhsfjkshfdkajshfklas"}
-]
-
-const product = document.getElementById("product");
-
-function getCart(){
-  return JSON.parse(localStorage.getItem("cart"))
-}
-
-function setCart(cart){
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function updateCartCount(){
-  const cart = getCart();
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  if(cartCount) cartCount.textContent = count;
-}
