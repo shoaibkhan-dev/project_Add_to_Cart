@@ -27,6 +27,12 @@ function updateCartCount() {
   if (cartCount) cartCount.textContent = count;
 }
 
+function updateCartCount() {
+  const cart = getCart();
+  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  if (cartCount) cartCount.textContent = count;
+}
+
 function updateCartCount(){
   const cart = getCart();
   const count = cart.reduce((sum, item) => sum + item.qty, 0);
